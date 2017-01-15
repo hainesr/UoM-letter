@@ -213,10 +213,6 @@
 % opening modified to include the letterhead
 \def\opening#1{%
   \global\everypar\expandafter{\the\let@everypar}%
-  \ifx\@empty\fromaddress%
-  \else  % home address
-    \@warning{Sender's address ignored---default assumed.}%
-  \fi%
   \thispagestyle{empty} %
   \iflogo@%
     \ifx\pdfoutput\undefined

@@ -224,7 +224,7 @@
     \else
        \@pdffile%
     \fi
-    \vspace*{-2.0cm}%
+    \vspace*{-3.5cm}
     \begin{flushright}
 %    \hspace*{\fill}
     \begin{minipage}[t]{4.0cm}{

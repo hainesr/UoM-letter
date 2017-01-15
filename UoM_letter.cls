@@ -35,7 +35,6 @@
 \def\international{\def\phone@prefix{+44 (0) 161 }}
 
 \def\fax#1{\def\@fax{Fax: +44 (0) 161 275  #1}}
-\fax{6204}
 
 \def\phonenumber#1{\def\@extension{Direct: +44 (0) 161 275 #1}}
 %\def\extension#1{\def\@extension{Telephone: \phone@prefix 275 2000 ext. #1}}

@@ -17,8 +17,7 @@
 \RequirePackage{graphicx}
 %
 % OPTIONS
-%\DeclareOption{nologo}{\logo@false}
-\DeclareOption{nologo}{\typeout{nologo option not yet available}}
+\DeclareOption{nologo}{\logo@false}
 \DeclareOption{times}{\ps@true}
 \DeclareOption{helv}{\ps@true\helv@true}
 \DeclareOption{a4paper}{\typeout{A4 is the default papersize}}
@@ -47,10 +46,6 @@
 
 % The old umcsd-let had a \prof command, so new-let does as well.
 \def\prof#1{\typeout{\protect\prof\space not supported at present}}
-
-% Suppress the printing of the logo, so that the letter may be copied onto
-% the pre-printed notepaper.
-\def\nologo{\logo@false}
 
 % Don't give full path name, let latex and dvips find it
 \def\@psfile{\special{psfile=UoM_logo_corner.jpg %newunilogo-corner.ps

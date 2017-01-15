@@ -1,8 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{umcsletter}[2005/08/16 School letter style (GDG)]
+\ProvidesClass{UoM_letter}[2017/01/15 University of Manchester letter style]
+
 %
-% University of Manchester Computer Science Department Letterhead
+% University of Manchester Letterhead
 %
+% Based on, and inspired by, Computer Science Letterhead
+%
+
 \newif\iflogo@
 \logo@true
 \newif\ifps@

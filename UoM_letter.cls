@@ -32,12 +32,12 @@
 \def\phone@prefix{+44 (0) 161 }
 \def\phonenumber#1{\def\@phone{tel \phone@prefix 275 #1}}
 \def\faxnumber#1{\def\@fax{fax \phone@prefix 275  #1}}
+\def\email#1{\def\@email{#1}}
 
 %\newcommand{\date}[1]{\renewcommand{\today}{#1}}
 
 \def\shrm#1{\def\@shrm{#1}}
 
-\def\email#1{\def\@email{#1}}
 
 \def\extraa#1{\def\@extraa{#1}}
 \def\extrab#1{\def\@extrab{#1}}

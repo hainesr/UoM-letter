@@ -31,15 +31,8 @@
 % Phone, fax, email address, etc.
 
 \def\phone@prefix{+44 (0) 161 }
-
-\def\fax#1{\def\@fax{Fax: \phone@prefix 275  #1}}
-
-\def\phonenumber#1{\def\@extension{Direct: \phone@prefix 275 #1}}
-%\def\extension#1{\def\@extension{Telephone: \phone@prefix 275 2000 ext. #1}}
-%\def\@extension{%
-%  \@@warning{No telephone extension specified---using dept office
-%  number \phone@prefix 275 6124}%
-%  tel +44 (0) 161 306 9280}
+\def\phonenumber#1{\def\@phone{Direct: \phone@prefix 275 #1}}
+\def\faxnumber#1{\def\@fax{Fax: \phone@prefix 275  #1}}
 
 %\newcommand{\date}[1]{\renewcommand{\today}{#1}}
 
@@ -247,7 +240,7 @@
       Oxford Road\\[-1.25ex]
       Manchester\\[-1.25ex]
       M13 9PL\\[1.0ex]
-      \@extension\\[-1.25ex]
+      \@phone\\[-1.25ex]
       \@fax\\[-1.25ex]
       \@email\\
     }
@@ -277,7 +270,7 @@
       %Manchester\\[-1.25ex]
       %M13 9PL\\[0.0ex]
       %\vspace{-3mm}
-      %\@extension\\
+      %\@phone\\
       %\@fax\vspace{3mm}\\
       %http://hcw.cs.manchester.ac.uk
       %http://www.manchester.ac.uk/research/caroline.jay/
@@ -285,7 +278,7 @@
 
 
         %\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
-        % \@extension\\%
+        % \@phone\\%
         % \@fax%
         %\mbox{}
         %\@ifundefined{@email}{}{\vspace{-3mm}\\\@email}%%

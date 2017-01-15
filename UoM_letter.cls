@@ -17,7 +17,6 @@
 \RequirePackage{graphicx}
 %
 % OPTIONS
-\DeclareOption{international}{\international}
 %\DeclareOption{nologo}{\logo@false}
 \DeclareOption{nologo}{\typeout{nologo option not yet available}}
 \DeclareOption{times}{\ps@true}
@@ -29,14 +28,13 @@
 
 
 
-% Fax, extension number and email address.
+% Phone, fax, email address, etc.
 
-\def\phone@prefix{0161 }
-\def\international{\def\phone@prefix{+44 (0) 161 }}
+\def\phone@prefix{+44 (0) 161 }
 
-\def\fax#1{\def\@fax{Fax: +44 (0) 161 275  #1}}
+\def\fax#1{\def\@fax{Fax: \phone@prefix 275  #1}}
 
-\def\phonenumber#1{\def\@extension{Direct: +44 (0) 161 275 #1}}
+\def\phonenumber#1{\def\@extension{Direct: \phone@prefix 275 #1}}
 %\def\extension#1{\def\@extension{Telephone: \phone@prefix 275 2000 ext. #1}}
 %\def\@extension{%
 %  \@@warning{No telephone extension specified---using dept office

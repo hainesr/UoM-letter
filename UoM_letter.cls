@@ -31,8 +31,8 @@
 % Phone, fax, email address, etc.
 
 \def\phone@prefix{+44 (0) 161 }
-\def\phonenumber#1{\def\@phone{Direct: \phone@prefix 275 #1}}
-\def\faxnumber#1{\def\@fax{Fax: \phone@prefix 275  #1}}
+\def\phonenumber#1{\def\@phone{tel \phone@prefix 275 #1}}
+\def\faxnumber#1{\def\@fax{fax \phone@prefix 275  #1}}
 
 %\newcommand{\date}[1]{\renewcommand{\today}{#1}}
 

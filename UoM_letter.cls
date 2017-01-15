@@ -228,7 +228,7 @@
     \begin{flushright}
 %    \hspace*{\fill}
     \begin{minipage}[t]{4.0cm}{
-      \fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
+      \fontsize{9pt}{9pt}\fontfamily{phv}\fontseries{m}\selectfont
       \textbf{School of Computer Science}\\[1.0ex]
       The University of Manchester\\[-1.25ex]
       \@shrm\\[-1.25ex]

@@ -38,11 +38,11 @@
 \fax{6204}
 
 \def\phonenumber#1{\def\@extension{Direct: +44 (0) 161 275 #1}}
-\def\extension#1{\def\@extension{Telephone: \phone@prefix 275 2000 ext. #1}}
-\def\@extension{%
+%\def\extension#1{\def\@extension{Telephone: \phone@prefix 275 2000 ext. #1}}
+%\def\@extension{%
 %  \@@warning{No telephone extension specified---using dept office
 %  number \phone@prefix 275 6124}%
-  tel +44 (0) 161 306 9280}
+%  tel +44 (0) 161 306 9280}
 
 %\newcommand{\date}[1]{\renewcommand{\today}{#1}}
 
@@ -242,21 +242,17 @@
     \vspace*{-2.0cm}%
     \begin{flushright}
 %    \hspace*{\fill}
-    \begin{minipage}[t]{4.0cm}%
-      {%\renewcommand{\baselinestretch}{0.0}
+    \begin{minipage}[t]{4.0cm}{
       \fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
-      \textbf{School of Computer Science}\\[-0.75ex]
+      \textbf{School of Computer Science}\\[1.0ex]
       The University of Manchester\\[-1.25ex]
       \@shrm\\[-1.25ex]
       Oxford Road\\[-1.25ex]
       Manchester\\[-1.25ex]
-      M13 9PL\\[0.0ex]
-     \vspace*{0cm}
-      www.manchester.ac.uk
-          %\@extension\\[-1.25ex]
-     %\@fax\\[1.25ex]
-     %hcw.cs.manchester.ac.uk\\
-     %www.manchester.ac.uk\\[-1.25ex]www.cs.man.ac.uk/$\sim$sharper
+      M13 9PL\\[1.0ex]
+      \@extension\\[-1.25ex]
+      \@fax\\[-1.25ex]
+      \@email\\
     }
     \end{minipage}
 
@@ -271,21 +267,21 @@
     \end{minipage}
     \end{flushright}
    \fi%
-   {
-    \begin{flushright}
-      \begin{minipage}[t]{4.0cm}%
+   %{
+    %\begin{flushright}
+      %\begin{minipage}[t]{4.0cm}%
 
-      {%\renewcommand{\baselinestretch}{0.0}
-      \fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
+      %{%\renewcommand{\baselinestretch}{0.0}
+      %\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
       %\textbf{School of Computer Science}\\[-0.75ex]
       %The University of Manchester\\[-1.25ex]
       %2.44, Kilburn Building\\[-1.25ex]
       %Oxford Road\\[-1.25ex]
       %Manchester\\[-1.25ex]
       %M13 9PL\\[0.0ex]
-      \vspace{-3mm}
-     \@extension\\
-     \@fax\vspace{3mm}\\
+      %\vspace{-3mm}
+      %\@extension\\
+      %\@fax\vspace{3mm}\\
       %http://hcw.cs.manchester.ac.uk
       %http://www.manchester.ac.uk/research/caroline.jay/
       %www.cs.man.ac.uk/$\sim$sharper\\
@@ -294,16 +290,16 @@
         %\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
         % \@extension\\%
         % \@fax%
-        \mbox{}
-        \@ifundefined{@email}{}{\vspace{-3mm}\\\@email}%%
+        %\mbox{}
+        %\@ifundefined{@email}{}{\vspace{-3mm}\\\@email}%%
         %\@ifundefined{@extraa}{}{\\\@extraa}%
          %\@ifundefined{@extrab}{}{\\\@extrab}%
          %\@ifundefined{@extrac}{}{\\\@extrac}%
          %\@ifundefined{@extrad}{}{\\\@extrad}\par
-       }
-      \end{minipage}
-    \end{flushright}
-  }%
+       %}
+      %\end{minipage}
+    %\end{flushright}
+  %}%
    \normalfont
    \normalsize%
    \vskip\baselineskip%

@@ -15,6 +15,8 @@
 \helv@false
 
 \RequirePackage{graphicx}
+\RequirePackage{xstring}
+
 %
 % OPTIONS
 \DeclareOption{nologo}{\logo@false}
@@ -28,10 +30,13 @@
 
 
 % Phone, fax, email address, etc.
-
 \def\phone@prefix{+44 (0) 161 }
-\def\phonenumber#1{\def\@phone{tel \phone@prefix 275 #1}}
-\def\faxnumber#1{\def\@fax{fax \phone@prefix 275  #1}}
+\def\split@extension#1{
+  \IfBeginWith{#1}{5}{275 \StrRight{#1}{4}}{306 \StrRight{#1}{4}}
+}
+
+\def\phonenumber#1{\def\@phone{tel \phone@prefix \split@extension{#1}}}
+\def\faxnumber#1{\def\@fax{fax \phone@prefix \split@extension{#1}}}
 \def\email#1{\def\@email{#1}}
 
 %\newcommand{\date}[1]{\renewcommand{\today}{#1}}

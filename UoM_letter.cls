@@ -41,6 +41,15 @@
 
 %\newcommand{\date}[1]{\renewcommand{\today}{#1}}
 
+% Organizational units:
+% Faculty, School, Directorate, etc - required
+\def\orgmain#1{\def\@orgmain{#1}}
+% Division, etc - optional
+\newif\iforgsub@
+\orgsub@false
+\def\orgsub#1{\orgsub@true\def\@orgsub{#1}}
+
+
 \def\shrm#1{\def\@shrm{#1}}
 
 
@@ -230,8 +239,11 @@
 %    \hspace*{\fill}
     \begin{minipage}[t]{4.0cm}{
       \fontsize{9pt}{9pt}\fontfamily{phv}\fontseries{m}\selectfont
-      \textbf{School of Computer Science}\\[1.0ex]
       The University of Manchester\\[-1.25ex]
+      \@orgmain\\[-1.25ex]
+      \iforgsub@
+        \@orgsub\\[-1.25ex]
+      \fi
       \@shrm\\[-1.25ex]
       Oxford Road\\[-1.25ex]
       Manchester\\[-1.25ex]

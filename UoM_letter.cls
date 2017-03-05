@@ -55,16 +55,6 @@
 % The old umcsd-let had a \prof command, so new-let does as well.
 \def\prof#1{\typeout{\protect\prof\space not supported at present}}
 
-% Don't give full path name, let latex and dvips find it
-\def\@psfile{\special{psfile=UoM_logo_corner.jpg %newunilogo-corner.ps
-               voffset=-65
-               hoffset=-20
-               hscale=15 vscale=15}}
-\def\@pdffile{\begin{picture}(0,0)
-              \put(-50,30){
-              \includegraphics[width=3.47cm]{UoM_logo}}
-	      \end{picture}}
-
 % Optional subject line, as for umcsd-let
 \newtoks\@subjheadtoks
 \newif\ifsubjline@
@@ -216,12 +206,13 @@
 \def\opening#1{%
   \global\everypar\expandafter{\the\let@everypar}%
   \thispagestyle{empty} %
-  \iflogo@%
-    \ifx\pdfoutput\undefined
-       \@psfile
-    \else
-       \@pdffile%
-    \fi
+  \iflogo@
+    % Position the logo.
+    \begin{picture}(0,0)
+      \put(-50,30){
+      \includegraphics[width=3.47cm]{UoM_logo}}
+    \end{picture}
+
     \vspace*{-3.5cm}
     \begin{flushright}
 %    \hspace*{\fill}

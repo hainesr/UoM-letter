@@ -50,13 +50,13 @@
 \def\orgsub#1{\orgsub@true\def\@orgsub{#1}}
 
 
-\def\shrm#1{\def\@shrm{#1}}
-
 
 \def\extraa#1{\def\@extraa{#1}}
 \def\extrab#1{\def\@extrab{#1}}
 \def\extrac#1{\def\@extrac{#1}}
 \def\extrad#1{\def\@extrad{#1}}
+% building. Could be <building> or <room, building>.
+\def\building#1{\def\@building{#1}}
 
 % The old umcsd-let had a \prof command, so new-let does as well.
 \def\prof#1{\typeout{\protect\prof\space not supported at present}}
@@ -244,7 +244,7 @@
       \iforgsub@
         \@orgsub\\[-1.25ex]
       \fi
-      \@shrm\\[-1.25ex]
+      \@building\\[-1.25ex]
       Oxford Road\\[-1.25ex]
       Manchester\\[-1.25ex]
       M13 9PL\\[1.0ex]
@@ -261,7 +261,7 @@
     \begin{flushright}
     \begin{minipage}[t]{4.0cm}%
     {\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
-     \textbf{(Room: \@shrm)}\\}
+     \textbf{(Room: \@building)}\\}
     \end{minipage}
     \end{flushright}
    \fi%

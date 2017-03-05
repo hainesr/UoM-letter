@@ -16,6 +16,7 @@
 
 \RequirePackage{graphicx}
 \RequirePackage{xstring}
+\RequirePackage{color}
 
 %
 % OPTIONS
@@ -27,7 +28,8 @@
 \DeclareOption{letterpaper}{\typeout{letter paper option ignored}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{letter}}
 
-
+% Colour for the address text.
+\definecolor{grey}{gray}{0.5}
 
 % Phone, fax, email address, etc.
 \def\phone@prefix{+44 (0) 161 }
@@ -225,6 +227,7 @@
 %    \hspace*{\fill}
     \begin{minipage}[t]{4.0cm}{
       \fontsize{9pt}{9pt}\fontfamily{phv}\fontseries{m}\selectfont
+      \color{grey}
       The University of Manchester\\[-1.25ex]
       \@orgmain\\[-1.25ex]
       \iforgsub@

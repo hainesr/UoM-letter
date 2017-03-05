@@ -61,8 +61,8 @@
                hoffset=-20
                hscale=15 vscale=15}}
 \def\@pdffile{\begin{picture}(0,0)
-              \put(-65,-40){
-              \includegraphics[width=5cm,height=4.63cm]{UoM_logo_corner}}
+              \put(-50,30){
+              \includegraphics[width=3.47cm]{UoM_logo}}
 	      \end{picture}}
 
 % Optional subject line, as for umcsd-let

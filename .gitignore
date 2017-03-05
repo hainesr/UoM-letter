@@ -1,5 +1,5 @@
 # Ignore LaTeX/TeX stuff.
 
-*.pdf
-*.aux
-*.log
+UoM_letter.pdf
+UoM_letter.aux
+UoM_letter.log

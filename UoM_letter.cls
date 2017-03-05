@@ -39,8 +39,6 @@
 \def\faxnumber#1{\def\@fax{fax \phone@prefix \split@extension{#1}}}
 \def\email#1{\def\@email{#1}}
 
-%\newcommand{\date}[1]{\renewcommand{\today}{#1}}
-
 % Organizational units:
 % Faculty, School, Directorate, etc - required
 \def\orgmain#1{\def\@orgmain{#1}}
@@ -85,12 +83,6 @@
 % LOAD letter
 \LoadClass{letter}
 
-% FONTS
-%\def\familydefault{\sfdefault}
-%\def\sfdefault{phv}
-%\def\rmdefault{ptm}
-%\def\ttdefault{pcr}
-%\def\bfdefault{b}
 
 \DeclareFontFamily{OT1}{phv}{}
 
@@ -264,40 +256,8 @@
      \textbf{(Room: \@building)}\\}
     \end{minipage}
     \end{flushright}
-   \fi%
-   %{
-    %\begin{flushright}
-      %\begin{minipage}[t]{4.0cm}%
+   \fi
 
-      %{%\renewcommand{\baselinestretch}{0.0}
-      %\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
-      %\textbf{School of Computer Science}\\[-0.75ex]
-      %The University of Manchester\\[-1.25ex]
-      %2.44, Kilburn Building\\[-1.25ex]
-      %Oxford Road\\[-1.25ex]
-      %Manchester\\[-1.25ex]
-      %M13 9PL\\[0.0ex]
-      %\vspace{-3mm}
-      %\@phone\\
-      %\@fax\vspace{3mm}\\
-      %http://hcw.cs.manchester.ac.uk
-      %http://www.manchester.ac.uk/research/caroline.jay/
-      %www.cs.man.ac.uk/$\sim$sharper\\
-
-
-        %\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
-        % \@phone\\%
-        % \@fax%
-        %\mbox{}
-        %\@ifundefined{@email}{}{\vspace{-3mm}\\\@email}%%
-        %\@ifundefined{@extraa}{}{\\\@extraa}%
-         %\@ifundefined{@extrab}{}{\\\@extrab}%
-         %\@ifundefined{@extrac}{}{\\\@extrac}%
-         %\@ifundefined{@extrad}{}{\\\@extrad}\par
-       %}
-      %\end{minipage}
-    %\end{flushright}
-  %}%
    \normalfont
    \normalsize%
    \vskip\baselineskip%

@@ -47,12 +47,6 @@
 \orgsub@false
 \def\orgsub#1{\orgsub@true\def\@orgsub{#1}}
 
-
-
-\def\extraa#1{\def\@extraa{#1}}
-\def\extrab#1{\def\@extrab{#1}}
-\def\extrac#1{\def\@extrac{#1}}
-\def\extrad#1{\def\@extrad{#1}}
 % building. Could be <building> or <room, building>.
 \def\building#1{\def\@building{#1}}
 

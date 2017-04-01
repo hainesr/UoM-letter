@@ -14,6 +14,7 @@
 \RequirePackage{xstring}
 \RequirePackage{color}
 \RequirePackage{pslatex}
+\RequirePackage[normalem]{ulem}
 
 %
 % OPTIONS
@@ -56,6 +57,9 @@
 % Set Helvetica as the font to use.
 \renewcommand\familydefault{\sfdefault}
 
+% A couple of commands for notes, etc.
+\newcommand{\noteToSelf}[1]{\textcolor{red}{[\uppercase{#1}]}}
+\newcommand{\changed}[1]{\textcolor{red}{\uwave{#1}}}
 
 % PROCESS OPTIONS
 \ProcessOptions

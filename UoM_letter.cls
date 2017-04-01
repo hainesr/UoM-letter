@@ -47,9 +47,6 @@
 % building. Could be <building> or <room, building>.
 \def\building#1{\def\@building{#1}}
 
-% The old umcsd-let had a \prof command, so new-let does as well.
-\def\prof#1{\typeout{\protect\prof\space not supported at present}}
-
 % Optional subject line, as for umcsd-let
 \newtoks\@subjheadtoks
 \newif\ifsubjline@

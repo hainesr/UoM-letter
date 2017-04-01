@@ -58,7 +58,7 @@
 \renewcommand\familydefault{\sfdefault}
 
 % A couple of commands for notes, etc.
-\newcommand{\noteToSelf}[1]{\textcolor{red}{[\uppercase{#1}]}}
+\newcommand{\notetoself}[1]{\textcolor{red}{[\uppercase{#1}]}}
 \newcommand{\changed}[1]{\textcolor{red}{\uwave{#1}}}
 
 % PROCESS OPTIONS

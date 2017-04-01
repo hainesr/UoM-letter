@@ -65,7 +65,7 @@
 \ProcessOptions
 
 % LOAD letter
-\LoadClass{letter}
+\LoadClass[10pt, a4paper]{letter}
 
 
 % Make it an error not to call \opening

@@ -53,6 +53,8 @@
 \subjline@false
 \def\subjhead#1{\subjline@true\@subjheadtoks={#1}}
 
+% Set Helvetica as the font to use.
+\renewcommand\familydefault{\sfdefault}
 
 
 % PROCESS OPTIONS

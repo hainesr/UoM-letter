@@ -67,6 +67,9 @@
 % LOAD letter
 \LoadClass[10pt, a4paper]{letter}
 
+% Slightly condensed paras, and no initial indent.
+\setlength{\parskip}{1.1ex}
+\setlength{\parindent}{0pt}
 
 % Make it an error not to call \opening
 \newtoks\let@everypar

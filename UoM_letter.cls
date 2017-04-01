@@ -88,7 +88,7 @@
       \includegraphics[width=3.47cm]{UoM_logo}}
     \end{picture}
 
-    \vspace*{-3.5cm}
+    \vspace*{-3.0cm}
     \begin{flushright}
     \begin{minipage}[t]{4.0cm}
       \fontsize{9pt}{9pt}\selectfont

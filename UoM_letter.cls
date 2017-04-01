@@ -9,20 +9,15 @@
 
 \newif\iflogo@
 \logo@true
-\newif\ifps@
-\ps@false
-\newif\ifhelv@
-\helv@false
 
 \RequirePackage{graphicx}
 \RequirePackage{xstring}
 \RequirePackage{color}
+\RequirePackage{pslatex}
 
 %
 % OPTIONS
 \DeclareOption{nologo}{\logo@false}
-\DeclareOption{times}{\ps@true}
-\DeclareOption{helv}{\ps@true\helv@true}
 \DeclareOption{a4paper}{\typeout{A4 is the default papersize}}
 \DeclareOption{a5paper}{\typeout{A5 paper option ignored}}
 \DeclareOption{letterpaper}{\typeout{letter paper option ignored}}
@@ -69,126 +64,6 @@
 % LOAD letter
 \LoadClass{letter}
 
-
-\DeclareFontFamily{OT1}{phv}{}
-
-\DeclareFontShape{OT1}{phv}{b}{n}{
-   <-> s * [.9] phvb7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{b}{sc}{
-   <-> s * [.9] phvbc7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{b}{sl}{
-   <-> s * [.9] phvbo7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{bc}{n}{
-   <-> s * [.9] phvbrn7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{bc}{sc}{
-   <-> s * [.9] phvbcn7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{bc}{sl}{
-   <-> s * [.9] phvbon7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{m}{n}{
-   <-> s * [.9] phvr7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{m}{sc}{
-   <-> s * [.9] phvrc7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{m}{sl}{
-   <-> s * [.9] phvro7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{mc}{n}{
-   <-> s * [.9] phvrrn7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{mc}{sc}{
-   <-> s * [.9] phvrcn7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{mc}{sl}{
-   <-> s * [.9] phvron7t
-}{}
-
-\DeclareFontShape{OT1}{phv}{bx}{n}{<->ssub * phv/b/n}{}
-\DeclareFontShape{OT1}{phv}{bx}{sc}{<->ssub * phv/b/sc}{}
-\DeclareFontShape{OT1}{phv}{bx}{sl}{<->ssub * phv/b/sl}{}
-\DeclareFontShape{OT1}{phv}{b}{it}{<->ssub * phv/b/sl}{}
-\DeclareFontShape{OT1}{phv}{bx}{it}{<->ssub * phv/b/it}{}
-\DeclareFontShape{OT1}{phv}{bc}{it}{<->ssub * phv/bc/sl}{}
-\DeclareFontShape{OT1}{phv}{m}{it}{<->ssub * phv/m/sl}{}
-\DeclareFontShape{OT1}{phv}{mc}{it}{<->ssub * phv/mc/sl}{}
-
-\DeclareFontFamily{T1}{phv}{}
-
-\DeclareFontShape{T1}{phv}{b}{n}{
-   <-> s * [.9] phvb8t
-}{}
-
-\DeclareFontShape{T1}{phv}{b}{sc}{
-   <-> s * [.9] phvbc8t
-}{}
-
-\DeclareFontShape{T1}{phv}{b}{sl}{
-   <-> s * [.9] phvbo8t
-}{}
-
-\DeclareFontShape{T1}{phv}{bc}{n}{
-   <-> s * [.9] phvbrn8t
-}{}
-
-\DeclareFontShape{T1}{phv}{bc}{sc}{
-   <-> s * [.9] phvbcn8t
-}{}
-
-\DeclareFontShape{T1}{phv}{bc}{sl}{
-   <-> s * [.9] phvbon8t
-}{}
-
-\DeclareFontShape{T1}{phv}{m}{n}{
-   <-> s * [.9] phvr8t
-}{}
-
-\DeclareFontShape{T1}{phv}{m}{sc}{
-   <-> s * [.9] phvrc8t
-}{}
-
-\DeclareFontShape{T1}{phv}{m}{sl}{
-   <-> s * [.9] phvro8t
-}{}
-
-\DeclareFontShape{T1}{phv}{mc}{n}{
-   <-> s * [.9] phvrrn8t
-}{}
-
-\DeclareFontShape{T1}{phv}{mc}{sc}{
-   <-> s * [.9] phvrcn8t
-}{}
-
-\DeclareFontShape{T1}{phv}{mc}{sl}{
-   <-> s * [.9] phvron8t
-}{}
-
-\DeclareFontShape{T1}{phv}{bx}{n}{<->ssub * phv/b/n}{}
-\DeclareFontShape{T1}{phv}{bx}{sc}{<->ssub * phv/b/sc}{}
-\DeclareFontShape{T1}{phv}{bx}{sl}{<->ssub * phv/b/sl}{}
-\DeclareFontShape{T1}{phv}{b}{it}{<->ssub * phv/b/sl}{}
-\DeclareFontShape{T1}{phv}{bx}{it}{<->ssub * phv/b/it}{}
-\DeclareFontShape{T1}{phv}{bc}{it}{<->ssub * phv/bc/sl}{}
-\DeclareFontShape{T1}{phv}{m}{it}{<->ssub * phv/m/sl}{}
-\DeclareFontShape{T1}{phv}{mc}{it}{<->ssub * phv/mc/sl}{}
-
-\normalfont
 
 % Make it an error not to call \opening
 \newtoks\let@everypar
@@ -278,12 +153,4 @@
     \textheight 690 pt    % Height of text (including footnotes and figures)
 \or % mods for 12 pt  (\baselineskip=15pt)
     \textheight 685 pt    % Height of text (including footnotes and figures)
-\fi
-
-\ifps@
- \RequirePackage{pslatex}
- \ifhelv@
-%   \typeout{Using Helvetica font for letter body}
-   \def\familydefault{\sfdefault}
- \fi
 \fi

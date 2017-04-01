@@ -90,25 +90,23 @@
 
     \vspace*{-3.5cm}
     \begin{flushright}
-%    \hspace*{\fill}
-    \begin{minipage}[t]{4.0cm}{
-      \fontsize{9pt}{9pt}\fontfamily{phv}\fontseries{m}\selectfont
+    \begin{minipage}[t]{4.0cm}
+      \fontsize{9pt}{9pt}\selectfont
       \color{grey}
-      The University of Manchester\\[-1.25ex]
-      \@orgmain\\[-1.25ex]
+      The University of Manchester\\
+      \@orgmain\\
       \iforgsub@
-        \@orgsub\\[-1.25ex]
+        \@orgsub\\
       \fi
-      \@building\\[-1.25ex]
-      Oxford Road\\[-1.25ex]
-      Manchester\\[-1.25ex]
-      M13 9PL\\[1.0ex]
-      \@phone\\[-1.25ex]
-      \@fax\\[-1.25ex]
-      \@email\\
-    }
+      \@building\\
+      Oxford Road\\
+      Manchester\\
+      M13 9PL\\
+      \\\\
+      \@phone\\
+      \@fax\\
+      \@email
     \end{minipage}
-
     \end{flushright}
     %
    \else%

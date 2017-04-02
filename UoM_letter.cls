@@ -15,6 +15,7 @@
 \RequirePackage{color}
 \RequirePackage{pslatex}
 \RequirePackage[normalem]{ulem}
+\RequirePackage[UKenglish]{isodate}
 
 %
 % OPTIONS
@@ -62,6 +63,9 @@
 % A couple of commands for notes, etc.
 \newcommand{\notetoself}[1]{\textcolor{red}{[\uppercase{#1}]}}
 \newcommand{\changed}[1]{\textcolor{red}{\uwave{#1}}}
+
+% Nicer date
+\cleanlookdateon
 
 % PROCESS OPTIONS
 \ProcessOptions

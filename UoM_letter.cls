@@ -117,7 +117,10 @@
       \iffax@
         \@fax\\
       \fi
-      \@email
+      \@email\\
+      \\
+      \color{black}
+      \@date
     \end{minipage}
     \end{flushright}
   \else % No logo.
@@ -126,15 +129,17 @@
     \begin{minipage}[t]{4.0cm}
       \fontsize{9pt}{9pt}\selectfont
       \color{grey}
-      (Room: \@building)
+      (Room: \@building)\\
+      \\
+      \color{black}
+      \@date
     \end{minipage}
     \end{flushright}
    \fi % End logo.
 
    \normalfont
-   \normalsize%
-   \vskip\baselineskip%
-   \@date\\[\baselineskip]%
+   \normalsize
+   \vskip\baselineskip
    \ignorespaces \toname\\%
    \toaddress\par\nobreak%
    \vspace{3\baselineskip minus 2\baselineskip}%%

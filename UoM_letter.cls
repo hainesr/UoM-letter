@@ -110,7 +110,7 @@
       Oxford Road\\
       Manchester\\
       M13 9PL\\
-      \\\\
+      \\
       \@phone\\
       \@fax\\
       \@email

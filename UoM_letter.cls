@@ -34,7 +34,9 @@
 }
 
 \def\phonenumber#1{\def\@phone{tel \phone@prefix \split@extension{#1}}}
-\def\faxnumber#1{\def\@fax{fax \phone@prefix \split@extension{#1}}}
+\newif\iffax@
+\fax@false
+\def\faxnumber#1{\fax@true\def\@fax{fax \phone@prefix \split@extension{#1}}}
 \def\email#1{\def\@email{#1}}
 
 % Organizational units:
@@ -112,7 +114,9 @@
       M13 9PL\\
       \\
       \@phone\\
-      \@fax\\
+      \iffax@
+        \@fax\\
+      \fi
       \@email
     \end{minipage}
     \end{flushright}

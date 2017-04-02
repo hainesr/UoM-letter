@@ -118,9 +118,10 @@
    \else%
     \vspace*{0.3cm}%
     \begin{flushright}
-    \begin{minipage}[t]{4.0cm}%
-    {\fontsize{8pt}{8pt}\fontfamily{phv}\fontseries{m}\selectfont%
-     \textbf{(Room: \@building)}\\}
+    \begin{minipage}[t]{4.0cm}
+      \fontsize{9pt}{9pt}\selectfont
+      \color{grey}
+      (Room: \@building)
     \end{minipage}
     \end{flushright}
    \fi

@@ -128,7 +128,7 @@
     \end{minipage}
     \end{flushright}
   \else % No logo.
-    \vspace*{0.3cm}%
+    \vspace*{0.175cm}%
     \begin{flushright}
     \begin{minipage}[t]{4.0cm}
       \fontsize{9pt}{9pt}\selectfont

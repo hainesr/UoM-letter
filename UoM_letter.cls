@@ -86,7 +86,8 @@
 % opening modified to include the letterhead
 \def\opening#1{%
   \global\everypar\expandafter{\the\let@everypar}%
-  \thispagestyle{empty} %
+  \thispagestyle{empty}
+
   \iflogo@
     % Position the logo.
     \begin{picture}(0,0)
@@ -94,6 +95,7 @@
       \includegraphics[width=3.47cm]{UoM_logo}}
     \end{picture}
 
+    % Position the address block.
     \vspace*{-3.0cm}
     \begin{flushright}
     \begin{minipage}[t]{4.0cm}
@@ -114,8 +116,7 @@
       \@email
     \end{minipage}
     \end{flushright}
-    %
-   \else%
+  \else % No logo.
     \vspace*{0.3cm}%
     \begin{flushright}
     \begin{minipage}[t]{4.0cm}
@@ -124,7 +125,7 @@
       (Room: \@building)
     \end{minipage}
     \end{flushright}
-   \fi
+   \fi % End logo.
 
    \normalfont
    \normalsize%

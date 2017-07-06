@@ -73,6 +73,10 @@
 % LOAD letter
 \LoadClass[10pt, a4paper]{letter}
 
+% Update the name command to include a role for the signatory
+\renewcommand*{\name}[2]{\def\fromname{{#1}\\{#2}}}
+\name{}{}
+
 % Slightly condensed paras, and no initial indent.
 \setlength{\parskip}{1.1ex}
 \setlength{\parindent}{0pt}

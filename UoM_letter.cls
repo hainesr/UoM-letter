@@ -158,6 +158,20 @@
      \end{center}}%
    \par\nobreak\fi}
 
+\renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
+  \stopbreaks
+  \noindent
+  \parbox{\indentedwidth}{\raggedright
+  \ignorespaces #1\\
+  \ifx\@empty\fromsig
+    \vspace{6\medskipamount}
+    \fromname
+  \else
+    \fromsig\\
+    \fromname
+  \fi\strut}%
+  \par}
+
 % no stretchability at the very top of the first page
 \def\@texttop{}
 %

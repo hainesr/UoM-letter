@@ -77,6 +77,9 @@
 \renewcommand*{\name}[2]{\def\fromname{{#1}\\{#2}}}
 \name{}{}
 
+\renewcommand*{\signature}[1]{\def\fromsig{\includegraphics[height=1.5cm]{#1}\\}}
+
+
 % Slightly condensed paras, and no initial indent.
 \setlength{\parskip}{1.1ex}
 \setlength{\parindent}{0pt}
@@ -167,7 +170,7 @@
     \vspace{6\medskipamount}
     \fromname
   \else
-    \fromsig\\
+    \fromsig
     \fromname
   \fi\strut}%
   \par}

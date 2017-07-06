@@ -169,9 +169,11 @@
   \ifx\@empty\fromsig
     \vspace{6\medskipamount}
     \fromname
+    \vspace{2\medskipamount}
   \else
     \fromsig
     \fromname
+    \vspace{2\medskipamount}
   \fi\strut}%
   \par}
 

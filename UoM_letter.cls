@@ -34,7 +34,9 @@
   \IfBeginWith{#1}{5}{275 \StrRight{#1}{4}}{306 \StrRight{#1}{4}}
 }
 
-\def\phonenumber#1{\def\@phone{tel \phone@prefix \split@extension{#1}}}
+\newif\ifphone@
+\phone@false
+\def\phonenumber#1{\phone@true\def\@phone{tel \phone@prefix \split@extension{#1}}}
 \newif\iffax@
 \fax@false
 \def\faxnumber#1{\fax@true\def\@fax{fax \phone@prefix \split@extension{#1}}}
@@ -124,7 +126,9 @@
       Manchester\\
       M13 9PL\\
       \\
-      \@phone\\
+      \ifphone@
+        \@phone\\
+      \fi
       \iffax@
         \@fax\\
       \fi
